@@ -79,6 +79,10 @@ value := ma.Update(price)
 - `NewObv/ObvArr(c, v)` — On-Balance Volume
 - `NewMfi/MfiArr(h, l, c, v, n)` — Money Flow Index
 
+## Author
+
+**sonnt85** — [thanhson.rf@gmail.com](mailto:thanhson.rf@gmail.com)
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
