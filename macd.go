@@ -13,9 +13,10 @@ package gotalib
 // and divergences to generate signals. Because the MACD is
 // unbounded, it is not particularly useful for identifying
 // overbought and oversold levels.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:moving_average_convergence_divergence_macd
-//  https://www.investopedia.com/terms/m/macd.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:moving_average_convergence_divergence_macd
+//	https://www.investopedia.com/terms/m/macd.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd
 type Macd struct {
 	*MacdExt
 }
@@ -39,9 +40,10 @@ func NewMacd(fastN, slowN, signalN int64) *Macd {
 // and divergences to generate signals. Because the MACD is
 // unbounded, it is not particularly useful for identifying
 // overbought and oversold levels.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:moving_average_convergence_divergence_macd
-//  https://www.investopedia.com/terms/m/macd.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:moving_average_convergence_divergence_macd
+//	https://www.investopedia.com/terms/m/macd.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd
 func MacdArr(in []float64, fastN, slowN, signalN int64) ([]float64, []float64, []float64) {
 	macd := make([]float64, len(in))
 	signal := make([]float64, len(in))

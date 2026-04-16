@@ -9,8 +9,9 @@ package gotalib
 // for signal line crossovers. A directional bias can be determined with the
 // absolute level. Bullish and bearish divergences can be used to anticipate
 // reversals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:trix
-//  https://www.investopedia.com/terms/t/trix.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:trix
+//	https://www.investopedia.com/terms/t/trix.asp
 type Trix struct {
 	n    int64
 	ema1 *Ema
@@ -75,8 +76,9 @@ func (t *Trix) Valid() bool {
 // for signal line crossovers. A directional bias can be determined with the
 // absolute level. Bullish and bearish divergences can be used to anticipate
 // reversals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:trix
-//  https://www.investopedia.com/terms/t/trix.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:trix
+//	https://www.investopedia.com/terms/t/trix.asp
 func TrixArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

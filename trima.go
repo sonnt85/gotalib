@@ -5,8 +5,9 @@ package gotalib
 // asset over a specified number of data points—usually a number of price bars.
 // However, the triangular moving average differs in that it is double
 // smoothed—which also means averaged twice.
-//  https://www.thebalance.com/triangular-moving-average-tma-description-and-uses-1031203
-//  https://www.fidelity.com/viewpoints/active-investor/moving-averages
+//
+//	https://www.thebalance.com/triangular-moving-average-tma-description-and-uses-1031203
+//	https://www.fidelity.com/viewpoints/active-investor/moving-averages
 type Trima struct {
 	n         int64
 	factor    float64
@@ -78,8 +79,9 @@ func (t *Trima) Valid() bool {
 // asset over a specified number of data points—usually a number of price bars.
 // However, the triangular moving average differs in that it is double
 // smoothed—which also means averaged twice.
-//  https://www.thebalance.com/triangular-moving-average-tma-description-and-uses-1031203
-//  https://www.fidelity.com/viewpoints/active-investor/moving-averages
+//
+//	https://www.thebalance.com/triangular-moving-average-tma-description-and-uses-1031203
+//	https://www.fidelity.com/viewpoints/active-investor/moving-averages
 func TrimaArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

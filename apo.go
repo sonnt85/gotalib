@@ -3,7 +3,8 @@ package gotalib
 // The Absolute Price Oscillator displays the difference
 // between two exponential moving averages of a security's
 // price and is expressed as an absolute value.
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/apo
+//
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/apo
 type Apo struct {
 	slowN  int64
 	fastMa *Ma
@@ -48,7 +49,8 @@ func (a *Apo) Valid() bool {
 // The Absolute Price Oscillator displays the difference
 // between two exponential moving averages of a security's
 // price and is expressed as an absolute value.
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/apo
+//
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/apo
 func ApoArr(t MaType, in []float64, fastN, slowN int64) []float64 {
 	out := make([]float64, len(in))
 

@@ -6,7 +6,8 @@ package gotalib
 // Stochastic Oscillator is the Slow %K incorporates a %K slowing period of 3 that
 // controls the internal smoothing of %K. Setting the smoothing period to 1 is
 // equivalent to plotting the Fast Stochastic Oscillator.
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/slow-stochastic
+//
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/slow-stochastic
 type StochSlow struct {
 	fastKN int64
 	slowKN int64
@@ -63,7 +64,8 @@ func (s *StochSlow) Valid() bool {
 // Stochastic Oscillator is the Slow %K incorporates a %K slowing period of 3 that
 // controls the internal smoothing of %K. Setting the smoothing period to 1 is
 // equivalent to plotting the Fast Stochastic Oscillator.
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/slow-stochastic
+//
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/slow-stochastic
 func StochSlowArr(h, l, c []float64, fastKN int64, kt MaType, slowKN int64, dt MaType, slowDN int64) ([]float64, []float64) {
 	k := make([]float64, len(c))
 	d := make([]float64, len(c))

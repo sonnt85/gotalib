@@ -8,7 +8,8 @@ package gotalib
 // calculation depends on the EMA calculations for all
 // the days prior to that day. You need far more than 10
 // days of data to calculate a reasonably accurate 10-day EMA.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
 type Ema struct {
 	n  int64
 	k1 float64
@@ -58,7 +59,8 @@ func (e *Ema) Valid() bool {
 // calculation depends on the EMA calculations for all
 // the days prior to that day. You need far more than 10
 // days of data to calculate a reasonably accurate 10-day EMA.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
 func EmaArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

@@ -15,9 +15,10 @@ package gotalib
 // Chartists can use this indicator to affirm a security's
 // underlying trend or anticipate reversals when the
 // indicator diverges from the security price.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:accumulation_distribution_line
-//  https://www.investopedia.com/terms/a/accumulationdistribution.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/accumulation-distribution
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:accumulation_distribution_line
+//	https://www.investopedia.com/terms/a/accumulationdistribution.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/accumulation-distribution
 type Ad struct {
 	ad float64
 }
@@ -59,9 +60,10 @@ func (a *Ad) Valid() bool {
 // Chartists can use this indicator to affirm a security's
 // underlying trend or anticipate reversals when the
 // indicator diverges from the security price.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:accumulation_distribution_line
-//  https://www.investopedia.com/terms/a/accumulationdistribution.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/accumulation-distribution
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:accumulation_distribution_line
+//	https://www.investopedia.com/terms/a/accumulationdistribution.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/accumulation-distribution
 func AdArr(h, l, c, v []float64) []float64 {
 	out := make([]float64, len(c))
 

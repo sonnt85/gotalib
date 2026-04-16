@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	sma := tart.NewSma(5)
+	sma := gotalib.NewSma(5)
 	for i := 0; i < 20; i++ {
 		val := sma.Update(float64(i % 7))
 		if sma.Valid() {

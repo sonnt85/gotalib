@@ -10,8 +10,9 @@ package gotalib
 // moving average that remains smooth, but stays closer to the
 // price bars than either the single- or double-smoothed
 // traditional EMA.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:dema
-//  https://www.investopedia.com/terms/d/double-exponential-moving-average.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:dema
+//	https://www.investopedia.com/terms/d/double-exponential-moving-average.asp
 type Dema struct {
 	n    int64
 	ema1 *Ema
@@ -61,8 +62,9 @@ func (d *Dema) Valid() bool {
 // moving average that remains smooth, but stays closer to the
 // price bars than either the single- or double-smoothed
 // traditional EMA.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:dema
-//  https://www.investopedia.com/terms/d/double-exponential-moving-average.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:dema
+//	https://www.investopedia.com/terms/d/double-exponential-moving-average.asp
 func DemaArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

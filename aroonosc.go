@@ -11,8 +11,9 @@ package gotalib
 // expand the bull-bear threshold to identify stronger signals.
 // See our ChartSchool article for more details on Aroon-Up and
 // Aroon-Down.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:aroon_oscillator
-//  https://www.investopedia.com/terms/a/aroonoscillator.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:aroon_oscillator
+//	https://www.investopedia.com/terms/a/aroonoscillator.asp
 type AroonOsc struct {
 	n     int64
 	aroon *Aroon
@@ -49,8 +50,9 @@ func (a *AroonOsc) Valid() bool {
 // expand the bull-bear threshold to identify stronger signals.
 // See our ChartSchool article for more details on Aroon-Up and
 // Aroon-Down.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:aroon_oscillator
-//  https://www.investopedia.com/terms/a/aroonoscillator.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:aroon_oscillator
+//	https://www.investopedia.com/terms/a/aroonoscillator.asp
 func AroonOscArr(h, l []float64, n int64) []float64 {
 	out := make([]float64, len(h))
 

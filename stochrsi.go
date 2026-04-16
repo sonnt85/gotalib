@@ -11,8 +11,9 @@ package gotalib
 // a stock based on an overbought or oversold reading in RSI might find themselves
 // continuously on the sidelines. Chande and Kroll developed StochRSI to increase
 // sensitivity and generate more overbought/oversold signals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:stochrsi
-//  https://www.investopedia.com/terms/s/stochrsi.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:stochrsi
+//	https://www.investopedia.com/terms/s/stochrsi.asp
 type StochRsi struct {
 	n     int64
 	kN    int64
@@ -70,8 +71,9 @@ func (s *StochRsi) Valid() bool {
 // a stock based on an overbought or oversold reading in RSI might find themselves
 // continuously on the sidelines. Chande and Kroll developed StochRSI to increase
 // sensitivity and generate more overbought/oversold signals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:stochrsi
-//  https://www.investopedia.com/terms/s/stochrsi.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:stochrsi
+//	https://www.investopedia.com/terms/s/stochrsi.asp
 func StochRsiArr(in []float64, n, kN int64, dt MaType, dN int64) ([]float64, []float64) {
 	k := make([]float64, len(in))
 	d := make([]float64, len(in))

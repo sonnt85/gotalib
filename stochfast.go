@@ -11,9 +11,10 @@ package gotalib
 // Lane also used this oscillator to identify bull and bear set-ups to anticipate
 // a future reversal. As the Stochastic Oscillator is range-bound, it is also
 // useful for identifying overbought and oversold levels.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:stochastic_oscillator_fast_slow_and_full
-//  https://www.investopedia.com/terms/s/stochasticoscillator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fast-stochastic
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:stochastic_oscillator_fast_slow_and_full
+//	https://www.investopedia.com/terms/s/stochasticoscillator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fast-stochastic
 type StochFast struct {
 	kN     int64
 	dN     int64
@@ -68,9 +69,10 @@ func (s *StochFast) Valid() bool {
 // Lane also used this oscillator to identify bull and bear set-ups to anticipate
 // a future reversal. As the Stochastic Oscillator is range-bound, it is also
 // useful for identifying overbought and oversold levels.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:stochastic_oscillator_fast_slow_and_full
-//  https://www.investopedia.com/terms/s/stochasticoscillator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fast-stochastic
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:stochastic_oscillator_fast_slow_and_full
+//	https://www.investopedia.com/terms/s/stochasticoscillator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fast-stochastic
 func StochFastArr(h, l, c []float64, kN int64, dt MaType, dN int64) ([]float64, []float64) {
 	k := make([]float64, len(c))
 	d := make([]float64, len(c))

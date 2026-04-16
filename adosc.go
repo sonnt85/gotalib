@@ -13,8 +13,9 @@ package gotalib
 // anticipate trend changes in the underlying security. The
 // Chaikin Oscillator generates signals with crosses above/below
 // the zero line or with bullish/bearish divergences.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:chaikin_oscillator
-//  https://www.investopedia.com/terms/c/chaikinoscillator.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:chaikin_oscillator
+//	https://www.investopedia.com/terms/c/chaikinoscillator.asp
 type AdOsc struct {
 	fastN  int64
 	slowN  int64
@@ -85,8 +86,9 @@ func (a *AdOsc) Valid() bool {
 // anticipate trend changes in the underlying security. The
 // Chaikin Oscillator generates signals with crosses above/below
 // the zero line or with bullish/bearish divergences.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:chaikin_oscillator
-//  https://www.investopedia.com/terms/c/chaikinoscillator.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:chaikin_oscillator
+//	https://www.investopedia.com/terms/c/chaikinoscillator.asp
 func AdOscArr(h, l, c, v []float64, fastN, slowN int64) []float64 {
 	out := make([]float64, len(c))
 

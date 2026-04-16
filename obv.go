@@ -9,9 +9,10 @@ package gotalib
 // and negative volume flow. Chartists can look for
 // divergences between OBV and price to predict price
 // movements or use OBV to confirm price trends.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:on_balance_volume_obv
-//  https://www.investopedia.com/terms/o/onbalancevolume.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:on_balance_volume_obv
+//	https://www.investopedia.com/terms/o/onbalancevolume.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv
 type Obv struct {
 	prev float64
 	obv  float64
@@ -62,9 +63,10 @@ func (o *Obv) Valid() bool {
 // and negative volume flow. Chartists can look for
 // divergences between OBV and price to predict price
 // movements or use OBV to confirm price trends.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:on_balance_volume_obv
-//  https://www.investopedia.com/terms/o/onbalancevolume.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:on_balance_volume_obv
+//	https://www.investopedia.com/terms/o/onbalancevolume.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/obv
 func ObvArr(c, v []float64) []float64 {
 	out := make([]float64, len(c))
 

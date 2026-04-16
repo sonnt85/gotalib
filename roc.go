@@ -12,9 +12,10 @@ package gotalib
 // crossovers are prone to whipsaw, especially short-term, these crossovers
 // can be used to identify the overall trend. Identifying overbought or
 // oversold extremes comes naturally to the Rate-of-Change oscillator.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:rate_of_change_roc_and_momentum
-//  https://www.investopedia.com/terms/p/pricerateofchange.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:rate_of_change_roc_and_momentum
+//	https://www.investopedia.com/terms/p/pricerateofchange.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc
 type Roc struct {
 	n    int64
 	hist *CBuf
@@ -64,9 +65,10 @@ func (r *Roc) Valid() bool {
 // crossovers are prone to whipsaw, especially short-term, these crossovers
 // can be used to identify the overall trend. Identifying overbought or
 // oversold extremes comes naturally to the Rate-of-Change oscillator.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:rate_of_change_roc_and_momentum
-//  https://www.investopedia.com/terms/p/pricerateofchange.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:rate_of_change_roc_and_momentum
+//	https://www.investopedia.com/terms/p/pricerateofchange.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/roc
 func RocArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

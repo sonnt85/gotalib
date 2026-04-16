@@ -11,8 +11,9 @@ package gotalib
 // from 0 to -20 are considered overbought, while readings from -80 to -100
 // are considered oversold. Unsurprisingly, signals derived from the Stochastic
 // Oscillator are also applicable to Williams %R.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:williams_r
-//  https://www.investopedia.com/terms/w/williamsr.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:williams_r
+//	https://www.investopedia.com/terms/w/williamsr.asp
 type WillR struct {
 	n     int64
 	stoch *StochasticK
@@ -57,8 +58,9 @@ func (w *WillR) Valid() bool {
 // from 0 to -20 are considered overbought, while readings from -80 to -100
 // are considered oversold. Unsurprisingly, signals derived from the Stochastic
 // Oscillator are also applicable to Williams %R.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:williams_r
-//  https://www.investopedia.com/terms/w/williamsr.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:williams_r
+//	https://www.investopedia.com/terms/w/williamsr.asp
 func WillRArr(h, l, c []float64, n int64) []float64 {
 	out := make([]float64, len(c))
 

@@ -7,9 +7,10 @@ package gotalib
 // moves. Old data is dropped as new data becomes available, causing the average
 // to move along the time scale. The example below shows a 5-day moving average
 // evolving over three days.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
-//  https://www.investopedia.com/terms/s/sma.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
+//	https://www.investopedia.com/terms/s/sma.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma
 type Sma struct {
 	n    int64
 	hist *CBuf
@@ -54,9 +55,10 @@ func (s *Sma) Valid() bool {
 // moves. Old data is dropped as new data becomes available, causing the average
 // to move along the time scale. The example below shows a 5-day moving average
 // evolving over three days.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
-//  https://www.investopedia.com/terms/s/sma.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:moving_averages
+//	https://www.investopedia.com/terms/s/sma.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/sma
 func SmaArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

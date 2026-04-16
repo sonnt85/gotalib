@@ -12,9 +12,10 @@ package gotalib
 // between zero and one hundred. As a momentum oscillator
 // tied to volume, MFI is best suited to identify reversals
 // and price extremes with a variety of signals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:money_flow_index_mfi
-//  https://www.investopedia.com/terms/m/mfi.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/MFI
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:money_flow_index_mfi
+//	https://www.investopedia.com/terms/m/mfi.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/MFI
 type Mfi struct {
 	n        int64
 	positive *Sum
@@ -81,9 +82,10 @@ func (m *Mfi) Valid() bool {
 // between zero and one hundred. As a momentum oscillator
 // tied to volume, MFI is best suited to identify reversals
 // and price extremes with a variety of signals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:money_flow_index_mfi
-//  https://www.investopedia.com/terms/m/mfi.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/MFI
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:money_flow_index_mfi
+//	https://www.investopedia.com/terms/m/mfi.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/MFI
 func MfiArr(h, l, c, v []float64, n int64) []float64 {
 	out := make([]float64, len(c))
 

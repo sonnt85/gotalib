@@ -12,9 +12,10 @@ import (
 // dispersion or variability is, the lower the standard deviation. Chartists
 // can use the standard deviation to measure expected risk and determine
 // the significance of certain price movements.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:standard_deviation_volatility
-//  https://www.investopedia.com/terms/s/standarddeviation.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/standard-deviation
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:standard_deviation_volatility
+//	https://www.investopedia.com/terms/s/standarddeviation.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/standard-deviation
 type StdDev struct {
 	v *Var
 }
@@ -46,9 +47,10 @@ func (s *StdDev) Valid() bool {
 // dispersion or variability is, the lower the standard deviation. Chartists
 // can use the standard deviation to measure expected risk and determine
 // the significance of certain price movements.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:standard_deviation_volatility
-//  https://www.investopedia.com/terms/s/standarddeviation.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/standard-deviation
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:standard_deviation_volatility
+//	https://www.investopedia.com/terms/s/standarddeviation.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/standard-deviation
 func StdDevArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

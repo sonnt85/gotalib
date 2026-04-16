@@ -18,9 +18,10 @@ package gotalib
 // RSI and the Directional Movement Concept (ADX). Despite being
 // developed before the computer age, Wilder's indicators have
 // stood the test of time and remain extremely popular.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:average_true_range_atr
-//  https://www.investopedia.com/terms/a/atr.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:average_true_range_atr
+//	https://www.investopedia.com/terms/a/atr.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr
 type Atr struct {
 	n   int64
 	tr  *TRange
@@ -75,9 +76,10 @@ func (a *Atr) Valid() bool {
 // RSI and the Directional Movement Concept (ADX). Despite being
 // developed before the computer age, Wilder's indicators have
 // stood the test of time and remain extremely popular.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:average_true_range_atr
-//  https://www.investopedia.com/terms/a/atr.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:average_true_range_atr
+//	https://www.investopedia.com/terms/a/atr.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr
 func AtrArr(h, l, c []float64, n int64) []float64 {
 	out := make([]float64, len(c))
 

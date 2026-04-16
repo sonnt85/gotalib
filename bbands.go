@@ -12,9 +12,10 @@ package gotalib
 // the upper and lower band, including the popular Bollinger Band
 // Squeeze, are identified using the related Bollinger BandWidth
 // indicator.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:bollinger_bands
-//  https://www.investopedia.com/terms/b/bollingerbands.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:bollinger_bands
+//	https://www.investopedia.com/terms/b/bollingerbands.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands
 type BBands struct {
 	initPeriod int64
 	ma         *Ma
@@ -72,9 +73,10 @@ func (b *BBands) Valid() bool {
 // the upper and lower band, including the popular Bollinger Band
 // Squeeze, are identified using the related Bollinger BandWidth
 // indicator.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:bollinger_bands
-//  https://www.investopedia.com/terms/b/bollingerbands.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:bollinger_bands
+//	https://www.investopedia.com/terms/b/bollingerbands.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-bands
 func BBandsArr(t MaType, in []float64, n int64, upNStdDev, dnNStdDev float64) ([]float64, []float64, []float64) {
 	m := make([]float64, len(in))
 	u := make([]float64, len(in))

@@ -13,7 +13,8 @@ import (
 // trend-following indicator can be used to identify the
 // overall trend, time turning points and filter price
 // movements.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:kaufman_s_adaptive_moving_average
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:kaufman_s_adaptive_moving_average
 type Kama struct {
 	n          int64
 	constA     float64
@@ -90,7 +91,8 @@ func (k *Kama) Valid() bool {
 // trend-following indicator can be used to identify the
 // overall trend, time turning points and filter price
 // movements.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:kaufman_s_adaptive_moving_average
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:kaufman_s_adaptive_moving_average
 func KamaArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

@@ -12,9 +12,10 @@ package gotalib
 // prices are far above their average, but is relatively low
 // when prices are far below their average. In this manner,
 // CCI can be used to identify overbought and oversold levels.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:commodity_channel_index_cci
-//  https://www.investopedia.com/terms/c/commoditychannelindex.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cci
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:commodity_channel_index_cci
+//	https://www.investopedia.com/terms/c/commoditychannelindex.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cci
 type Cci struct {
 	n          int64
 	initPeriod int64
@@ -74,9 +75,10 @@ func (d *Cci) Valid() bool {
 // prices are far above their average, but is relatively low
 // when prices are far below their average. In this manner,
 // CCI can be used to identify overbought and oversold levels.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:commodity_channel_index_cci
-//  https://www.investopedia.com/terms/c/commoditychannelindex.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cci
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:commodity_channel_index_cci
+//	https://www.investopedia.com/terms/c/commoditychannelindex.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cci
 func CciArr(h, l, c []float64, n int64) []float64 {
 	out := make([]float64, len(h))
 

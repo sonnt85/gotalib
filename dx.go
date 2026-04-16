@@ -5,7 +5,8 @@ import (
 )
 
 // Refer to ADX.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
 type Dx struct {
 	n        int64
 	prevH    float64
@@ -79,7 +80,8 @@ func (d *Dx) Valid() bool {
 }
 
 // Refer to ADX.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
 func DxArr(h, l, c []float64, n int64) []float64 {
 	out := make([]float64, len(c))
 

@@ -11,8 +11,9 @@ package gotalib
 // subject to the price level of the security. Second, PPO readings
 // for different securities can be compared, even when there are
 // large differences in the price.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:price_oscillators_ppo
-//  https://www.investopedia.com/terms/p/ppo.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:price_oscillators_ppo
+//	https://www.investopedia.com/terms/p/ppo.asp
 type Ppo struct {
 	fastN int64
 	slowN int64
@@ -69,8 +70,9 @@ func (p *Ppo) Valid() bool {
 // subject to the price level of the security. Second, PPO readings
 // for different securities can be compared, even when there are
 // large differences in the price.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:price_oscillators_ppo
-//  https://www.investopedia.com/terms/p/ppo.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:price_oscillators_ppo
+//	https://www.investopedia.com/terms/p/ppo.asp
 func PpoArr(in []float64, t MaType, fastN, slowN int64) []float64 {
 	out := make([]float64, len(in))
 

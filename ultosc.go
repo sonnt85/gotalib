@@ -14,9 +14,10 @@ import (
 // incorporating longer timeframes into the basic formula. Williams identified
 // a buy signal a based on a bullish divergence and a sell signal based on a
 // bearish divergence.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:ultimate_oscillator
-//  https://www.investopedia.com/terms/u/ultimateoscillator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ultimate-oscillator
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:ultimate_oscillator
+//	https://www.investopedia.com/terms/u/ultimateoscillator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ultimate-oscillator
 type UltOsc struct {
 	n1    int64
 	n2    int64
@@ -100,9 +101,10 @@ func (u *UltOsc) Valid() bool {
 // incorporating longer timeframes into the basic formula. Williams identified
 // a buy signal a based on a bullish divergence and a sell signal based on a
 // bearish divergence.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:ultimate_oscillator
-//  https://www.investopedia.com/terms/u/ultimateoscillator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ultimate-oscillator
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:ultimate_oscillator
+//	https://www.investopedia.com/terms/u/ultimateoscillator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ultimate-oscillator
 func UltOscArr(h, l, c []float64, n1, n2, n3 int64) []float64 {
 	out := make([]float64, len(c))
 

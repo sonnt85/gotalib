@@ -27,9 +27,10 @@ package gotalib
 //
 // Using these three indicators together, chartists can
 // determine both the direction and strength of the trend.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
-//  https://www.investopedia.com/articles/trading/07/adx-trend-indicator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/adx
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
+//	https://www.investopedia.com/articles/trading/07/adx-trend-indicator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/adx
 type Adx struct {
 	n   int64
 	dx  *Dx
@@ -93,9 +94,10 @@ func (a *Adx) Valid() bool {
 //
 // Using these three indicators together, chartists can
 // determine both the direction and strength of the trend.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
-//  https://www.investopedia.com/articles/trading/07/adx-trend-indicator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/adx
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:average_directional_index_adx
+//	https://www.investopedia.com/articles/trading/07/adx-trend-indicator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/adx
 func AdxArr(h, l, c []float64, n int64) []float64 {
 	out := make([]float64, len(c))
 

@@ -10,8 +10,9 @@ package gotalib
 // and sellers dominate when the indicator is negative. A reading
 // near the zero line indicates a balance between the two and
 // can mean a trend reversal.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:balance_of_power
-//  https://www.investopedia.com/terms/b/bop.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:balance_of_power
+//	https://www.investopedia.com/terms/b/bop.asp
 type Bop struct {
 }
 
@@ -45,8 +46,9 @@ func (b *Bop) Valid() bool {
 // and sellers dominate when the indicator is negative. A reading
 // near the zero line indicates a balance between the two and
 // can mean a trend reversal.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:balance_of_power
-//  https://www.investopedia.com/terms/b/bop.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:balance_of_power
+//	https://www.investopedia.com/terms/b/bop.asp
 func BopArr(o, h, l, c []float64) []float64 {
 	out := make([]float64, len(o))
 

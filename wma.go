@@ -4,7 +4,8 @@ package gotalib
 // data. This is done by multiplying each bar’s price by a weighting factor.
 // Because of its unique calculation, WMA will follow prices more closely
 // than a corresponding Simple Moving Average.
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/wma
+//
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/wma
 type Wma struct {
 	n    int64
 	d    float64
@@ -57,7 +58,8 @@ func (w *Wma) Valid() bool {
 // data. This is done by multiplying each bar’s price by a weighting factor.
 // Because of its unique calculation, WMA will follow prices more closely
 // than a corresponding Simple Moving Average.
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/wma
+//
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/wma
 func WmaArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

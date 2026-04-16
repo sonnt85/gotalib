@@ -10,8 +10,9 @@ package gotalib
 // and double-smoothed EMAs employed in the formula for DEMA. The offset created
 // using these three EMAs produces a moving average that stays even closer to the
 // price bars than DEMA.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:tema
-//  https://www.investopedia.com/terms/t/triple-exponential-moving-average.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:tema
+//	https://www.investopedia.com/terms/t/triple-exponential-moving-average.asp
 type Tema struct {
 	n    int64
 	sz   int64
@@ -68,8 +69,9 @@ func (t *Tema) Valid() bool {
 // and double-smoothed EMAs employed in the formula for DEMA. The offset created
 // using these three EMAs produces a moving average that stays even closer to the
 // price bars than DEMA.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:tema
-//  https://www.investopedia.com/terms/t/triple-exponential-moving-average.asp
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:tema
+//	https://www.investopedia.com/terms/t/triple-exponential-moving-average.asp
 func TemaArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

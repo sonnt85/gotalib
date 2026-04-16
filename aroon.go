@@ -23,9 +23,10 @@ type Aroon struct {
 // time relative to price. Chartists can use the Aroon
 // indicators to spot emerging trends, identify consolidations,
 // define correction periods and anticipate reversals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:aroon
-//  https://www.investopedia.com/terms/a/aroon.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/aroon-indicator
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:aroon
+//	https://www.investopedia.com/terms/a/aroon.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/aroon-indicator
 func NewAroon(n int64) *Aroon {
 	return &Aroon{
 		n:   n,
@@ -76,9 +77,10 @@ func (a *Aroon) Valid() bool {
 // time relative to price. Chartists can use the Aroon
 // indicators to spot emerging trends, identify consolidations,
 // define correction periods and anticipate reversals.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:aroon
-//  https://www.investopedia.com/terms/a/aroon.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/aroon-indicator
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:aroon
+//	https://www.investopedia.com/terms/a/aroon.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/aroon-indicator
 func AroonArr(h, l []float64, n int64) ([]float64, []float64) {
 	dn := make([]float64, len(h))
 	up := make([]float64, len(h))

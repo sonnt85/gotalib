@@ -16,9 +16,10 @@ package gotalib
 // This book also includes the Parabolic SAR, Average True Range and the Directional
 // Movement Concept (ADX). Despite being developed before the computer age,
 // Wilder's indicators have stood the test of time and remain extremely popular.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:relative_strength_index_rsi
-//  https://www.investopedia.com/terms/r/rsi.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/RSI
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:relative_strength_index_rsi
+//	https://www.investopedia.com/terms/r/rsi.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/RSI
 type Rsi struct {
 	n     int64
 	up    *Ema
@@ -93,9 +94,10 @@ func (r *Rsi) Valid() bool {
 // This book also includes the Parabolic SAR, Average True Range and the Directional
 // Movement Concept (ADX). Despite being developed before the computer age,
 // Wilder's indicators have stood the test of time and remain extremely popular.
-//  https://school.stockcharts.com/doku.php?id=technical_indicators:relative_strength_index_rsi
-//  https://www.investopedia.com/terms/r/rsi.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/RSI
+//
+//	https://school.stockcharts.com/doku.php?id=technical_indicators:relative_strength_index_rsi
+//	https://www.investopedia.com/terms/r/rsi.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/RSI
 func RsiArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 

@@ -6,8 +6,9 @@ package gotalib
 // difference between the sum of recent gains and the sum
 // of recent losses and then divides the result by the sum
 // of all price movements over the same period.
-//  https://www.investopedia.com/terms/c/chandemomentumoscillator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cmo
+//
+//	https://www.investopedia.com/terms/c/chandemomentumoscillator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cmo
 type Cmo struct {
 	n          int64
 	initPeriod int64
@@ -77,8 +78,9 @@ func (c *Cmo) Valid() bool {
 // difference between the sum of recent gains and the sum
 // of recent losses and then divides the result by the sum
 // of all price movements over the same period.
-//  https://www.investopedia.com/terms/c/chandemomentumoscillator.asp
-//  https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cmo
+//
+//	https://www.investopedia.com/terms/c/chandemomentumoscillator.asp
+//	https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cmo
 func CmoArr(in []float64, n int64) []float64 {
 	out := make([]float64, len(in))
 
