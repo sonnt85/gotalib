@@ -1,5 +1,7 @@
 # gotalib
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/sonnt85/gotalib.svg)](https://pkg.go.dev/github.com/sonnt85/gotalib)
+
 Technical analysis library for Go — streaming and batch implementations of common financial indicators.
 
 ## Installation
@@ -64,20 +66,41 @@ value := ma.Update(price)
 
 ### Momentum & Trend
 - `NewRsi/RsiArr(n)` — Relative Strength Index
-- `NewMacd/MacdArr(fast, slow, signal)` — MACD line, signal, histogram
+- `NewCmo/CmoArr(n)` — Chande Momentum Oscillator
+- `NewRoc/RocArr(n)` — Rate of Change
+- `NewTrix/TrixArr(n)` — Triple Exponential Average oscillator
+- `NewDx/DxArr(h, l, c, n)` — Directional Movement Index
 - `NewAdx/AdxArr(n)` — Average Directional Index
+- `NewAdxR/AdxRArr(h, l, c, n)` — Average Directional Index Rating (ADXR)
 - `NewAroon/AroonArr(n)` — Aroon Up/Down
+- `NewMacd/MacdArr(fast, slow, signal)` — MACD line, signal, histogram
+- `NewMacdExt/MacdExtArr(fastT, fastN, slowT, slowN, signalT, signalN)` — MACD with configurable MA types
 - `NewAtr/AtrArr(n)` — Average True Range
+- `NewNatr/NatrArr(h, l, c, n)` — Normalized Average True Range
+- `NewTRange/TRangeArr(h, l, c)` — True Range
 - `NewBBands/BBandsArr(type, n, upStd, dnStd)` — Bollinger Bands (upper, middle, lower)
 - `NewCci/CciArr(n)` — Commodity Channel Index
+- `NewBop/BopArr(o, h, l, c)` — Balance of Power
+- `NewWillR/WillRArr(h, l, c, n)` — Williams %R
+- `NewUltOsc/UltOscArr(h, l, c, n1, n2, n3)` — Ultimate Oscillator
+- `NewPpo/PpoArr(type, fastN, slowN)` — Percentage Price Oscillator
+- `NewApo/ApoArr(type, in, fastN, slowN)` — Absolute Price Oscillator
 - `NewStochFast/StochFastArr(...)` — Fast Stochastic %K and %D
 - `NewStochSlow/StochSlowArr(...)` — Slow Stochastic
+- `NewStochasticK/StochasticKArr(h, l, c, kN)` — raw Stochastic %K
 - `NewStochRsi/StochRsiArr(...)` — Stochastic RSI
 
 ### Volume
 - `NewAd/AdArr(h, l, c, v)` — Accumulation/Distribution Line
+- `NewAdOsc/AdOscArr(h, l, c, v, fastN, slowN)` — Accumulation/Distribution Oscillator (ADOSC)
 - `NewObv/ObvArr(c, v)` — On-Balance Volume
 - `NewMfi/MfiArr(h, l, c, v, n)` — Money Flow Index
+
+### Utility
+- `NewDiff/DiffArr(n)` — difference between current and n-periods-ago value
+- `NewSum/SumArr(n)` — rolling sum over n periods
+- `NewVar/VarArr(n)` — rolling variance over n periods
+- `NewStdDev/StdDevArr(n)` — rolling standard deviation over n periods
 
 ## Author
 
