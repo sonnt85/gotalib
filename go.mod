@@ -1,6 +1,7 @@
 module github.com/sonnt85/gotalib
 
-go 1.21
+go 1.23
+
 toolchain go1.25.5
 
 require (
